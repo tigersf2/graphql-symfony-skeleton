@@ -8,8 +8,10 @@ This project is copied from
 This is a complete stack for running Symfony 4 (latest version: Flex) into Docker containers using docker-compose tool.
 
 I'll try to add some others fixtures :
- - phpmyadmin
- - makefile (To do)
+ - Integrate phpmyadmin interface
+ - Create graphql samples
+ - Compiler pass use (Example : share content via linkedin, twitter, facebook, ...)
+ - Makefile (To do)
  - TestUnit (To do)
 
 Prerequisites
@@ -59,12 +61,16 @@ You are done, you can visit your Symfony application
 1. Symfony application
 
 ```bash
-http://symfony.localhost
+http://symfony.localhost:81
+```
+3. Graphiql
+```bash
+http://symfony.localhost:81/graphiql
 ```
 2. Kibana
 
 ```bash
-http://symfony.localhost:81
+http://symfony.localhost:82
 ```
 3. phpmyadmin
 

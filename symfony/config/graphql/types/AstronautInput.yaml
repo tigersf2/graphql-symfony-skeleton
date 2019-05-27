@@ -1,0 +1,8 @@
+AstronautInput:
+    type: input-object
+    config:
+        fields:
+            pseudo:
+                type: 'String!'
+            grade_id:
+                type: 'Int!'

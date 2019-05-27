@@ -1,0 +1,29 @@
+MutationSuccess:
+    type: object
+    config:
+        fields:
+            content:
+                type: String!
+
+Mutation:
+    type: object
+    config:
+        fields:
+            NewAstronaut:
+                type: MutationSuccess
+                resolve: "@=mutation('NewAstronaut', [args['input']['pseudo'], args['input']['grade_id']])"
+                args:
+                    input:
+                        type: AstronautInput!
+            NewGrade:
+                type: MutationSuccess
+                resolve: "@=mutation('NewGrade', [args['input']['name']])"
+                args:
+                    input:
+                        type: GradeInput!
+            NewPost:
+                type: MutationSuccess
+                resolve: "@=mutation('NewPost', [args['input']['content']])"
+                args:
+                    input:
+                        type: PostInput!

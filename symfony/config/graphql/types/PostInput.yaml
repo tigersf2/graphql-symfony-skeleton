@@ -1,0 +1,6 @@
+PostInput:
+    type: input-object
+    config:
+        fields:
+            content:
+                type: 'String!'
